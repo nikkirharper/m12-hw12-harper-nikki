@@ -1,6 +1,6 @@
 //Random Will Ferrell Quotes
-var button = document.getElementById("button"); 
-var quotes = [
+const button = document.getElementById("button"); 
+const quotes = [
     "He's an angry elf!” – Will Ferrell in Elf",
     "Well, um, actually a pretty nice little Saturday, we’re going to go to Home Depot. Yeah, buy some wallpaper, maybe get some flooring, stuff like that. Maybe Bed, Bath, & Beyond, I don’t know, I don’t know if we’ll have enough time. -Will Ferrell in Old School", 
     "I swear, I’m so pissed off at my mom. As soon as she’s of age, I’m putting her in a home. – Will Ferrell in Step Brothers",
@@ -16,8 +16,8 @@ var quotes = [
     ];
 
 
-    function randomizeQuotes() {
-        var i, j, k;
+    randomizeQuotes = () => {
+        let i, j, k;
           for (i = quotes.length -1; i > 0; i--) {
             j = Math.floor(Math.random() * i)
             k = quotes[i]
